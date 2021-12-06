@@ -1,4 +1,5 @@
 body {
+    background-color: #a7a6a6;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,6 +14,7 @@ body {
 }
 
 .container {
+    background-color: #ffffff;
     --grid-size:16;
     display: grid;
     grid-template-columns:repeat(var(--grid-size), 1fr);
