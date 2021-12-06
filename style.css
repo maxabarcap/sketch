@@ -1,18 +1,33 @@
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
 
+.btn {
+    width: 10vw;
+    height: 5vw;
+    margin: 2vw;
 }
 
 .container {
+    --grid-size:16;
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16,1fr);
+    grid-template-columns:repeat(var(--grid-size), 1fr);
+    grid-template-rows:repeat(var(--grid-size), 1fr);
+    column-gap: 0;
+    row-gap: 0;
+    width: 40vw;
+    height: 40vw;
 }
 
 .square {
-    width: 10px;
-    height: 10px;
+    width: 1fr;
+    height: 1fr;
 }
 
 .hovering {
-    
+    background-color: #000000;
 }
